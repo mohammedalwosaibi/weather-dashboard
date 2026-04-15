@@ -46,4 +46,4 @@ async function pollWeather() {
 }
 
 pollWeather();
-setInterval(pollWeather, 60000);
+setInterval(pollWeather, 300000);
