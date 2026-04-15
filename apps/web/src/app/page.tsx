@@ -84,7 +84,31 @@ export default function Home() {
               <h1 className="text-2xl font-bold text-white tracking-tight">Weather Dashboard</h1>
               <p className="text-slate-400 text-sm mt-1">Sign in to track live weather worldwide</p>
             </div>
-            <Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa, variables: { default: { colors: { brand: '#6366f1', brandAccent: '#4f46e5' } } } }} providers={[]} theme="dark" />
+            <Auth
+              supabaseClient={supabase}
+              appearance={{
+                theme: ThemeSupa,
+                variables: {
+                  default: {
+                    colors: {
+                      brand: '#6366f1',
+                      brandAccent: '#4f46e5',
+                      inputText: '#ffffff',
+                      inputLabelText: '#cbd5e1',
+                      inputPlaceholder: '#64748b',
+                      inputBackground: 'rgba(255,255,255,0.05)',
+                      inputBorder: 'rgba(255,255,255,0.1)',
+                      inputBorderFocus: '#6366f1',
+                      inputBorderHover: 'rgba(255,255,255,0.2)',
+                      anchorTextColor: '#94a3b8',
+                      anchorTextHoverColor: '#e2e8f0',
+                    },
+                  },
+                },
+              }}
+              providers={[]}
+              theme="dark"
+            />
           </div>
         </div>
       </div>
